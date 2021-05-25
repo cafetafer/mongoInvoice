@@ -40,6 +40,6 @@ public class ApplicationConfig extends AbstractMongoClientConfiguration {
 
     @Override
     protected Collection<String> getMappingBasePackages() {
-        return Collections.singleton("ccom.example.mongoInvoice.api");
+        return Collections.singleton("com.example.mongoInvoice.api");
     }
 }

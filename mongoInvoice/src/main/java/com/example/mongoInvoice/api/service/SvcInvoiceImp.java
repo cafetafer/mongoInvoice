@@ -31,7 +31,7 @@ public class SvcInvoiceImp implements SvcInvoice {
 	@Override
 	public Optional<Invoice> getInvoice(Integer id){
 		try {
-			return repo.findById(id);
+			return repo.findByIdInvoice(id);
 		}catch(Exception e) {
 			throw new ApiException(HttpStatus.NOT_FOUND, e.getLocalizedMessage());
 		}
